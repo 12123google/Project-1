@@ -1,0 +1,28 @@
+#Contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.CC{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.CC input{
+    margin: 5px;
+}
+.CC h3 {
+    font-size: 40px;
+}
+.inp{
+    padding: 10px;
+    background-color: rgb(231, 231, 231);
+    color: black;
+    border-width: 0px;
+}
+.biginp{
+    padding: 50px;
+}

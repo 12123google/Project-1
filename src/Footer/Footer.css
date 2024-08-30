@@ -1,0 +1,115 @@
+.footer {
+  background: #44425A;
+  color: #fff;
+  padding: 10px 25px 70px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+}
+
+.footer h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-list li,
+.social-links li {
+  margin-bottom: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.contact-list li span {
+  margin-left: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #f00;
+}
+
+.footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer input {
+  border-width: 0;
+  border-radius: 8px;
+  padding: 10px 20px; /* Увеличен padding для лучшего внешнего вида */
+  background: #5D9CB8;
+  color: white;
+  margin-bottom: 20px; /* Отступ снизу для респонсивного дизайна */
+}
+
+.footer input[type="email"]::placeholder {
+  color: white;
+}
+
+.footer button {
+  background-color: #FF6600;
+  border-style: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer button:hover {
+  background-color: darkorange;
+}
+
+.cm5 li::before {
+  content: '> ';
+}
+
+.cm5 li {
+  list-style: none;
+}
+
+.col-md-4 ul {
+  padding: 0px;
+}
+
+/* Респонсивные стили */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Элементы футера располагаются по вертикали */
+    align-items: flex-start;
+  }
+
+  .col-md-4 {
+    margin-bottom: 30px; /* Отступ снизу для удобства */
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .footer input, .footer button {
+    width: 100%; /* Ширина 100% для input и button */
+    margin-right: 0; /* Убираем отступ справа */
+  }
+}

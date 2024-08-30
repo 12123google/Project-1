@@ -1,0 +1,39 @@
+#Activity {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#Activity h1 {
+  font-size: 2.5em;
+  color: #FF6F00;
+  margin-bottom: 20px;
+}
+
+.ACs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusts columns based on available space */
+  gap: 20px;
+}
+
+.AC {
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.AC:hover {
+  transform: translateY(-10px);
+}
+
+.AC h5 {
+  font-size: 1.2em;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.AC-img {
+  width: 100%;
+  padding-bottom: 100%; 
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
